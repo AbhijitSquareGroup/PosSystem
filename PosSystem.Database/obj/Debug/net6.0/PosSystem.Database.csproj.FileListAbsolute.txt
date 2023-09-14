@@ -1,0 +1,17 @@
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\PosSystem.Database.csproj.AssemblyReference.cache
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\PosSystem.Database.GeneratedMSBuildEditorConfig.editorconfig
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\PosSystem.Database.AssemblyInfoInputs.cache
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\PosSystem.Database.AssemblyInfo.cs
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\PosSystem.Database.csproj.CoreCompileInputs.cache
+F:\ASP.net Project\PosSystem\PosSystem.Database\bin\Debug\net6.0\PosSystem.Database.deps.json
+F:\ASP.net Project\PosSystem\PosSystem.Database\bin\Debug\net6.0\PosSystem.Database.runtimeconfig.json
+F:\ASP.net Project\PosSystem\PosSystem.Database\bin\Debug\net6.0\PosSystem.Database.dll
+F:\ASP.net Project\PosSystem\PosSystem.Database\bin\Debug\net6.0\PosSystem.Database.pdb
+F:\ASP.net Project\PosSystem\PosSystem.Database\bin\Debug\net6.0\PosSystem.Models.dll
+F:\ASP.net Project\PosSystem\PosSystem.Database\bin\Debug\net6.0\PosSystem.Models.pdb
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\PosSystem.Database.csproj.CopyComplete
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\PosSystem.Database.dll
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\refint\PosSystem.Database.dll
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\PosSystem.Database.pdb
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\PosSystem.Database.genruntimeconfig.cache
+F:\ASP.net Project\PosSystem\PosSystem.Database\obj\Debug\net6.0\ref\PosSystem.Database.dll

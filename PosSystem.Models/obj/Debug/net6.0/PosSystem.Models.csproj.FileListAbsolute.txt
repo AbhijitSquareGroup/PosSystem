@@ -1,0 +1,11 @@
+F:\ASP.net Project\PosSystem\PosSystem.Models\obj\Debug\net6.0\PosSystem.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\ASP.net Project\PosSystem\PosSystem.Models\obj\Debug\net6.0\PosSystem.Models.AssemblyInfoInputs.cache
+F:\ASP.net Project\PosSystem\PosSystem.Models\obj\Debug\net6.0\PosSystem.Models.AssemblyInfo.cs
+F:\ASP.net Project\PosSystem\PosSystem.Models\obj\Debug\net6.0\PosSystem.Models.csproj.CoreCompileInputs.cache
+F:\ASP.net Project\PosSystem\PosSystem.Models\bin\Debug\net6.0\PosSystem.Models.deps.json
+F:\ASP.net Project\PosSystem\PosSystem.Models\bin\Debug\net6.0\PosSystem.Models.dll
+F:\ASP.net Project\PosSystem\PosSystem.Models\bin\Debug\net6.0\PosSystem.Models.pdb
+F:\ASP.net Project\PosSystem\PosSystem.Models\obj\Debug\net6.0\PosSystem.Models.dll
+F:\ASP.net Project\PosSystem\PosSystem.Models\obj\Debug\net6.0\refint\PosSystem.Models.dll
+F:\ASP.net Project\PosSystem\PosSystem.Models\obj\Debug\net6.0\PosSystem.Models.pdb
+F:\ASP.net Project\PosSystem\PosSystem.Models\obj\Debug\net6.0\ref\PosSystem.Models.dll

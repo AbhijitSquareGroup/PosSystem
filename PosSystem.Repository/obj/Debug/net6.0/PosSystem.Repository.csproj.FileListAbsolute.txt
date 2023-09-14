@@ -1,0 +1,11 @@
+F:\ASP.net Project\PosSystem\PosSystem.Repository\bin\Debug\net6.0\PosSystem.Repository.deps.json
+F:\ASP.net Project\PosSystem\PosSystem.Repository\bin\Debug\net6.0\PosSystem.Repository.dll
+F:\ASP.net Project\PosSystem\PosSystem.Repository\bin\Debug\net6.0\PosSystem.Repository.pdb
+F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\PosSystem.Repository.GeneratedMSBuildEditorConfig.editorconfig
+F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\PosSystem.Repository.AssemblyInfoInputs.cache
+F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\PosSystem.Repository.AssemblyInfo.cs
+F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\PosSystem.Repository.csproj.CoreCompileInputs.cache
+F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\PosSystem.Repository.dll
+F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\refint\PosSystem.Repository.dll
+F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\PosSystem.Repository.pdb
+F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\ref\PosSystem.Repository.dll
