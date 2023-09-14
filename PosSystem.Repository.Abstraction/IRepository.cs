@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PosSystem.Repository.Abstraction.Base
+namespace PosSystem.Repository.Abstraction
 {
-    public interface IRepository<in T> where T : class
+    public interface IRepository<T> where T : class
     {
         ICollection<T> GetAll();
-        bool Add(T item);
-        bool Remove(T item);        
+        bool Add(List<T> item);
+        bool Remove(T item);
         bool Update(T item);
     }
 }

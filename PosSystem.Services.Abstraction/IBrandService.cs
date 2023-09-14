@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PosSystem.Repository
+namespace PosSystem.Services.Abstraction
 {
-    public class ProductRepository : 
+    public interface IBrandService
     {
-
     }
 }

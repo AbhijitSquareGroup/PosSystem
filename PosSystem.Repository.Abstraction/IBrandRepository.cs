@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PosSystem.Repository
+namespace PosSystem.Repository.Abstraction
 {
-    public class ProductRepository : 
+    public interface IBrandRepository
     {
 
     }

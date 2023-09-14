@@ -9,3 +9,4 @@ F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\PosSystem.Rep
 F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\refint\PosSystem.Repository.dll
 F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\PosSystem.Repository.pdb
 F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\ref\PosSystem.Repository.dll
+F:\ASP.net Project\PosSystem\PosSystem.Repository\obj\Debug\net6.0\PosSystem.Repository.csproj.AssemblyReference.cache

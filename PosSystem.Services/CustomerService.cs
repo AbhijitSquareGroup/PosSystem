@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PosSystem.Repository.Abstraction.Customer
+namespace PosSystem.Services
 {
-    public interface ICustomerRepository
+    public class CustomerService
     {
     }
 }

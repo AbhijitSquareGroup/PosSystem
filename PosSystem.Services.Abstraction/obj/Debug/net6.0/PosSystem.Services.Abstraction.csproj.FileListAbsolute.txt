@@ -1,0 +1,11 @@
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\bin\Debug\net6.0\PosSystem.Services.Abstraction.deps.json
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\bin\Debug\net6.0\PosSystem.Services.Abstraction.dll
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\bin\Debug\net6.0\PosSystem.Services.Abstraction.pdb
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\obj\Debug\net6.0\PosSystem.Services.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\obj\Debug\net6.0\PosSystem.Services.Abstraction.AssemblyInfoInputs.cache
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\obj\Debug\net6.0\PosSystem.Services.Abstraction.AssemblyInfo.cs
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\obj\Debug\net6.0\PosSystem.Services.Abstraction.csproj.CoreCompileInputs.cache
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\obj\Debug\net6.0\PosSystem.Services.Abstraction.dll
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\obj\Debug\net6.0\refint\PosSystem.Services.Abstraction.dll
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\obj\Debug\net6.0\PosSystem.Services.Abstraction.pdb
+F:\ASP.net Project\PosSystem\PosSystem.Services.Abstraction\obj\Debug\net6.0\ref\PosSystem.Services.Abstraction.dll
