@@ -2,7 +2,49 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div ng-app="posSystemApp">
+    <div ng-controller="productCtrl">
+        <div class="text-center">
+            <h1 class="display-4">Welcome {{firstName + " " + lastName}}</h1>
+            <span ng-bind="firstName"></span>
+            <span ng-bind="lastName"></span>
+        </div>
+        <div ng-controller="myController">
+            {{message}}
+            </br>
+            <table>
+                <tr><td>First Name</td>
+                    <td>
+                        <input type="text" ng-model="employee.firstName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>
+                        <input type="text" ng-model="employee.lastName" />
+                    </td>
+                </tr>
+                <tr><td>Gender</td>
+                    <td>
+                        <input type="text" ng-model="employee.gender" />
+                    </td>
+                </tr>
+            </table>
+            <div>
+                First Name :{{employee.firstName}}
+            </div>
+            <div>
+                Last Name :{{employee.lastName}}
+            </div>
+            <div>
+                Gender :{{employee.gender}}
+            </div>
+            <input type="text" ng-model="mssg" />
+            </br></br>
+            {{mssg}}
+        </div>
+        
+    </div>
 </div>
+
+<script src="~/scriptng/controller/productctrl.js"></script>

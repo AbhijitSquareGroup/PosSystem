@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\PosSystem.bundle.scp.css"
     },
     {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\Images\\usa-map-in-blue-and-red-colors-ERNY24.jpg",
+      "PackagePath": "staticwebassets\\Images\\usa-map-in-blue-and-red-colors-ERNY24.jpg"
+    },
+    {
       "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -15,6 +19,26 @@
     {
       "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\lib\\angular.js\\angular-csp.css",
+      "PackagePath": "staticwebassets\\lib\\angular.js\\angular-csp.css"
+    },
+    {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\lib\\angular.js\\angular-csp.min.css",
+      "PackagePath": "staticwebassets\\lib\\angular.js\\angular-csp.min.css"
+    },
+    {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\lib\\angular.js\\angular.js",
+      "PackagePath": "staticwebassets\\lib\\angular.js\\angular.js"
+    },
+    {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\lib\\angular.js\\angular.min.js",
+      "PackagePath": "staticwebassets\\lib\\angular.js\\angular.min.js"
+    },
+    {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\lib\\angular.js\\angular.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\angular.js\\angular.min.js.map"
     },
     {
       "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -243,6 +267,14 @@
     {
       "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\scriptNg\\Controller\\productCtrl.js",
+      "PackagePath": "staticwebassets\\scriptNg\\Controller\\productCtrl.js"
+    },
+    {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\scriptNg\\app.js",
+      "PackagePath": "staticwebassets\\scriptNg\\app.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PosSystem.Microsoft.AspNetCore.StaticWebAssets.props",

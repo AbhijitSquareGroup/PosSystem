@@ -70,3 +70,4 @@ F:\ASP.net Project\PosSystem\PosSystem\obj\Debug\net6.0\PosSystem.genruntimeconf
 F:\ASP.net Project\PosSystem\PosSystem\obj\Debug\net6.0\ref\PosSystem.dll
 F:\ASP.net Project\PosSystem\PosSystem\bin\Debug\net6.0\Humanizer.dll
 F:\ASP.net Project\PosSystem\PosSystem\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\ASP.net Project\PosSystem\PosSystem\bin\Debug\net6.0\libman.json

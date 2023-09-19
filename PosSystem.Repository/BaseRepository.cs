@@ -11,6 +11,10 @@ namespace PosSystem.Repository
     public abstract class BaseRepository<T> : IRepository<T> where T : class
     {
         protected DbContext _db;
+        /*public BaseRepository()
+        {
+                
+        }*/
         private DbSet<T> Table
         {
             get

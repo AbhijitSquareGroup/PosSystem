@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace PosSystem.Models.UtilitiesModels
 {
-    internal class ProductSearchCriteria
+    public class ProductSearchCriteria
     {
+        public decimal? FromPrice { get; set; }
+        public decimal? ToPrice { get; set; }
+        public string SearchKey { get; set; }
     }
 }

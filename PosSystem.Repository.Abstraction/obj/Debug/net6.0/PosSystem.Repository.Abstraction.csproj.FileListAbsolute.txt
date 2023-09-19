@@ -9,3 +9,7 @@ F:\ASP.net Project\PosSystem\PosSystem.Repository.Abstraction\obj\Debug\net6.0\P
 F:\ASP.net Project\PosSystem\PosSystem.Repository.Abstraction\obj\Debug\net6.0\refint\PosSystem.Repository.Abstraction.dll
 F:\ASP.net Project\PosSystem\PosSystem.Repository.Abstraction\obj\Debug\net6.0\PosSystem.Repository.Abstraction.pdb
 F:\ASP.net Project\PosSystem\PosSystem.Repository.Abstraction\obj\Debug\net6.0\ref\PosSystem.Repository.Abstraction.dll
+F:\ASP.net Project\PosSystem\PosSystem.Repository.Abstraction\bin\Debug\net6.0\PosSystem.Models.dll
+F:\ASP.net Project\PosSystem\PosSystem.Repository.Abstraction\bin\Debug\net6.0\PosSystem.Models.pdb
+F:\ASP.net Project\PosSystem\PosSystem.Repository.Abstraction\obj\Debug\net6.0\PosSystem.Repository.Abstraction.csproj.AssemblyReference.cache
+F:\ASP.net Project\PosSystem\PosSystem.Repository.Abstraction\obj\Debug\net6.0\PosSystem.Repository.Abstraction.csproj.CopyComplete
