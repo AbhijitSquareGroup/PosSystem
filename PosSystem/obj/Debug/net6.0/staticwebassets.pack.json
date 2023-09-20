@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Images\\usa-map-in-blue-and-red-colors-ERNY24.jpg"
     },
     {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\css\\Table.css",
+      "PackagePath": "staticwebassets\\css\\Table.css"
+    },
+    {
       "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

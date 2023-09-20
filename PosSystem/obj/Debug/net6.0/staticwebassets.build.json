@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uWsX6juD6IVvpU3vVvjAoqfDtnDY3iuecCo5DrR1NAU=",
+  "Hash": "5+wIZko17G1NPPquxpTq55Tn6Pfh60XOkJnePN0m3g8=",
   "Source": "PosSystem",
   "BasePath": "_content/PosSystem",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\css\\Table.css",
+      "SourceId": "PosSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\",
+      "BasePath": "_content/PosSystem",
+      "RelativePath": "css/Table.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Table.css"
     },
     {
       "Identity": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\favicon.ico",

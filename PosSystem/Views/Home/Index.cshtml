@@ -45,6 +45,96 @@
         </div>
         
     </div>
-</div>
+    <div ng-controller="Table">
+        <table>
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employeeList">
+                    <td>{{employee.firstName}}</td>
+                    <td>{{employee.LastName}}</td>
+                    <td>{{employee.gender}}</td>
+                    <td>{{employee.salary}}</td>
 
-<script src="~/scriptng/controller/productctrl.js"></script>
+                </tr>
+            </tbody>
+        </table>
+    </div></br></br>
+
+    <div ng-controller="Table">
+        <ul>
+            <li ng-repeat="country in countryList" ng-init="parentIndex=$index">
+                {{country.name}} - Index = {{$index}}
+                <ul>
+                    <li ng-repeat="city in country.cities">
+                        {{city.name}} - Parent Index={{parentIndex}}, Index = {{$index}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div ng-controller="Table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
+                    <th>Likes/Dislikes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="technology in technologyList">
+                    <td>{{technology.name}}</td>
+                    <td>{{technology.like}}</td>
+                    <td>{{technology.dislike}}</td>
+                    <td>
+                        <input type="button" value="Like" ng-click="incrementLikes(technology)" />
+                        <input type="button" value="Dislike" ng-click="incrementDislikes(technology)" />
+                        <input type="button" value="Unlike" ng-click="decrementLikes(technology)" />
+                        <input type="button" value="Undislike" ng-click="decrementDislikes(technology)" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div ng-controller="Table">
+        Rows to Display :<input type="number" step="1" min="0" max="5" ng-model="rowlimit" />
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                    @*<th>Name</th>*@
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="student in studentList |limitTo:rowlimit |orderBy:'name':true">
+                    <td>{{student.name| uppercase}}</td>
+                    <td>{{student.dateOfBirth|date:"dd/MM/yyyy"}}</td>
+                    <td>{{student.gender| lowercase }}</td>
+                    <td>{{student.salary|currency:"$"}}</td>
+                    @* <td>{{studentList.Gender}}</td> *@
+                    @* <td>
+                        <input type="button" value="Like" ng-click="incrementLikes(technology)" />
+                        <input type="button" value="Dislike" ng-click="incrementDislikes(technology)" />
+                        <input type="button" value="Unlike" ng-click="decrementLikes(technology)" />
+                        <input type="button" value="Undislike" ng-click="decrementDislikes(technology)" />
+                    </td> *@
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+<link href="~/css/table.css" rel="stylesheet" />
+

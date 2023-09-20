@@ -1,0 +1,40 @@
+﻿/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style for table headers */
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Style for table cells */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Style for Like and Dislike buttons */
+input[type="button"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+    /* Style for Like and Dislike buttons on hover */
+    input[type="button"]:hover {
+        background-color: #0056b3;
+    }
+
+/* Style for the entire container */
+div[ng-controller="Table"] {
+    max-width: 800px;
+    margin: 0 auto;
+}
