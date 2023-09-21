@@ -77,9 +77,12 @@ app.controller("Table", function ($scope) {
     }
     var students = [
         { name: "Ben", dateOfBirth: new Date("november 23,1980"), gender: "Male", salary: 55000 },
-        { name: "Beniiiiii", dateOfBirth: new Date("november 29,1900"), gender: "Male", salary: 65000 },
+        { name: "Ukamala", dateOfBirth: new Date("november 29,1900"), gender: "Male", salary: 65000 },
+        { name: "Tushar", dateOfBirth: new Date("december 09,1998"), gender: "Male", salary: 15689 },
+        { name: "Lubaba", dateOfBirth: new Date("december 19,2005"), gender: "Female", salary: 465456 },
     ];
     $scope.studentList = students; 
-    $scope.rowlimit = 1;
+    //$scope.rowlimit = 2;
+    $scope.sortColumn = 'name';
 
 });

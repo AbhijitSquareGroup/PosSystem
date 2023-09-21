@@ -106,6 +106,14 @@
     </div>
     <div ng-controller="Table">
         Rows to Display :<input type="number" step="1" min="0" max="5" ng-model="rowlimit" />
+        Order By : <select ng-model="sortColumn">
+            <option value="name">Name ASC</option>
+            <option value="name">Gender ASC</option>
+            <option value="name">Date Of Birth ASC</option>
+            <option value="name">Salary DESC</option>
+
+        </select>
+        Search:<input type="text" placeholder="Search student" ng-model="searchText" />
         <table>
             <thead>
                 <tr>
@@ -117,7 +125,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="student in studentList |limitTo:rowlimit |orderBy:'name':true">
+                <tr ng-repeat="student in studentList |limitTo:rowlimit |orderBy:sortColumn |filter:searchText">
                     <td>{{student.name| uppercase}}</td>
                     <td>{{student.dateOfBirth|date:"dd/MM/yyyy"}}</td>
                     <td>{{student.gender| lowercase }}</td>
@@ -129,6 +137,7 @@
                         <input type="button" value="Unlike" ng-click="decrementLikes(technology)" />
                         <input type="button" value="Undislike" ng-click="decrementDislikes(technology)" />
                     </td> *@
+
                 </tr>
             </tbody>
         </table>
