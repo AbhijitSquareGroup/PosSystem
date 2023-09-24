@@ -807,6 +807,35 @@
         "runtime": {
           "bin/placeholder/PosSystem.Models.dll": {}
         }
+      },
+      "PosSystem.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.22",
+          "PosSystem.Database": "1.0.0",
+          "PosSystem.Models": "1.0.0",
+          "PosSystem.Repository.Abstraction": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PosSystem.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PosSystem.Repository.dll": {}
+        }
+      },
+      "PosSystem.Repository.Abstraction/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PosSystem.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PosSystem.Repository.Abstraction.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PosSystem.Repository.Abstraction.dll": {}
+        }
       }
     }
   },
@@ -2038,13 +2067,24 @@
       "type": "project",
       "path": "../PosSystem.Models/PosSystem.Models.csproj",
       "msbuildProject": "../PosSystem.Models/PosSystem.Models.csproj"
+    },
+    "PosSystem.Repository/1.0.0": {
+      "type": "project",
+      "path": "../PosSystem.Repository/PosSystem.Repository.csproj",
+      "msbuildProject": "../PosSystem.Repository/PosSystem.Repository.csproj"
+    },
+    "PosSystem.Repository.Abstraction/1.0.0": {
+      "type": "project",
+      "path": "../PosSystem.Repository.Abstraction/PosSystem.Repository.Abstraction.csproj",
+      "msbuildProject": "../PosSystem.Repository.Abstraction/PosSystem.Repository.Abstraction.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.22",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.22",
-      "PosSystem.Database >= 1.0.0"
+      "PosSystem.Database >= 1.0.0",
+      "PosSystem.Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2082,6 +2122,9 @@
           "projectReferences": {
             "F:\\ASP.net Project\\PosSystem\\PosSystem.Database\\PosSystem.Database.csproj": {
               "projectPath": "F:\\ASP.net Project\\PosSystem\\PosSystem.Database\\PosSystem.Database.csproj"
+            },
+            "F:\\ASP.net Project\\PosSystem\\PosSystem.Repository\\PosSystem.Repository.csproj": {
+              "projectPath": "F:\\ASP.net Project\\PosSystem\\PosSystem.Repository\\PosSystem.Repository.csproj"
             }
           }
         }

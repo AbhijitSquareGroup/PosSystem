@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PosSystem.Database\PosSystem.Database.csproj" />
+    <ProjectReference Include="..\PosSystem.Repository\PosSystem.Repository.csproj" />
   </ItemGroup>
 
 </Project>

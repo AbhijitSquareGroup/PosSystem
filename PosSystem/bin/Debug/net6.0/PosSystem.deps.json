@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.22",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.22",
-          "PosSystem.Database": "1.0.0"
+          "PosSystem.Database": "1.0.0",
+          "PosSystem.Repository": "1.0.0"
         },
         "runtime": {
           "PosSystem.dll": {}
@@ -459,6 +460,25 @@
         "runtime": {
           "PosSystem.Models.dll": {}
         }
+      },
+      "PosSystem.Repository/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.22",
+          "PosSystem.Database": "1.0.0",
+          "PosSystem.Models": "1.0.0",
+          "PosSystem.Repository.Abstraction": "1.0.0"
+        },
+        "runtime": {
+          "PosSystem.Repository.dll": {}
+        }
+      },
+      "PosSystem.Repository.Abstraction/1.0.0": {
+        "dependencies": {
+          "PosSystem.Models": "1.0.0"
+        },
+        "runtime": {
+          "PosSystem.Repository.Abstraction.dll": {}
+        }
       }
     }
   },
@@ -775,6 +795,16 @@
       "sha512": ""
     },
     "PosSystem.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PosSystem.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PosSystem.Repository.Abstraction/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

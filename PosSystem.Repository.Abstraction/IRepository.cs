@@ -10,6 +10,7 @@ namespace PosSystem.Repository.Abstraction
     {
         ICollection<T> GetAll();
         bool Add(List<T> item);
+        bool Add(T item);
         bool Remove(T item);
         bool Update(T item);
     }

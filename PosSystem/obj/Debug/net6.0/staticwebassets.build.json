@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5+wIZko17G1NPPquxpTq55Tn6Pfh60XOkJnePN0m3g8=",
+  "Hash": "5oMn+bLIfvLfPpRkbalNlgOotwUnlP89/rLM1WMAaAc=",
   "Source": "PosSystem",
   "BasePath": "_content/PosSystem",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "F:\\ASP.net Project\\PosSystem\\PosSystem\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PosSystem.bundle.scp.css"
+    },
+    {
+      "Identity": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\css\\Product.css",
+      "SourceId": "PosSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\",
+      "BasePath": "_content/PosSystem",
+      "RelativePath": "css/Product.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Product.css"
     },
     {
       "Identity": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\css\\site.css",

@@ -30,6 +30,12 @@ namespace PosSystem.Repository
             return _db.SaveChanges() > 0;
         }
 
+        public virtual bool Add(T item)
+        {
+            Table.Add(item);
+            return _db.SaveChanges() > 0;
+        }
+
         public virtual ICollection<T> GetAll()
         {
             return Table.ToList();

@@ -1,88 +1,54 @@
-﻿
-app.controller('productCtrl', function ($scope) {
-    $scope.firstName = "Abhijit";
-    $scope.lastName = "Gosh";
-});
-app.controller("myController", function ($scope) {
-    var employee = {
-        firstName: "",
-        lastName: "",
-        gender: ""
+﻿app.controller('ProductController', function ($scope, $http) {
+    // Initialize products array
+    $scope.products = [];
+
+    $scope.newProduct = { ProductId: 0, Name: '', Description: '', Price:'',BrandId: 0 }
+
+    $scope.save = function() {
+        var data = $scope.newProduct;
+        //console.log(data);
+        $scope.createProduct(data);
+    }
+
+
+    //service
+
+    // Load products from the API
+    $http.get('/product/CreateGet')
+        .then(function (response) {
+            $scope.products = response.data;
+        });
+
+    //// Load products from the API
+    //$http.get('/Brand/Getall')
+    //    .then(function (response) {
+    //        $scope.brands = response.data;
+    //    });
+
+    // Function to create a new product
+    $scope.createProduct = function (product) {
+        
+        $http.post('/product/CreatePost', product)
+            .then(function (response) {
+                console.log(response.data);
+                $scope.loadProducts();
+            });
     };
-    $scope.employee = employee;
-    $scope.message = "Angular Tutorial";
-    $scope.mssg = "Hello Angular";
-});
-/*app.controller("Controller", Function($scope){
-    $scope.mssg = "Hello Angular";
-});*/
-app.controller("Table", function ($scope) {
-    var employees = [
-        { firstName: "Mr.", LastName: "Bean", gender: "Male", salary: "589000" },
-        { firstName: "Mr.", LastName: "Karxon", gender: "Female", salary: "25000" },
-        { firstName: "Mr.", LastName: "Abhijit", gender: "Male", salary: "15236987" },
-    ];
-    $scope.employeeList = employees;
-    var countries = [
-        {
-            name: "UK",
-            cities: [
-                { name: "London" },
-                { name: "Manchester" },
-                { name: "Birmingham" },
-            ]
-        },
-        {
-            name: "Bangladesh",
-            cities: [
-                { name: "Dhaka" },
-                { name: "Khulna" },
-                { name: "Barisal" },
-            ]
-        },
-        {
-            name: "India",
-            cities: [
-                { name: "Kolkata" },
-                { name: "Chennai" },
-                { name: "Delhi" },
-            ]
-        },
-    ];
-    $scope.countryList = countries;
-    var technologies = [
-        { name: "c#", like: 0, dislike: 0 },
-        { name: "Asp.Net", like: 0, dislike: 0 },
-        { name: "Java", like: 0, dislike: 0 },
-    ];
-    $scope.technologyList = technologies;
-    $scope.incrementLikes = function (technology) {
-        technology.like++;
-    }
 
-    $scope.incrementDislikes = function (technology) {
-        technology.dislike++;
-    }
+    // Function to edit an existing product
+    $scope.editProduct = function (product) {
+        $http.put('/api/products/' + product.Id, product)
+            .then(function (response) {
+                // Refresh the products list after updating
+                $scope.loadProducts();
+            });
+    };
 
-    $scope.decrementLikes = function (technology) {
-        if (technology.like > 0) {
-            technology.like--;
-        }
-    }
-
-    $scope.decrementDislikes = function (technology) {
-        if (technology.dislike > 0) {
-            technology.dislike--;
-        }
-    }
-    var students = [
-        { name: "Ben", dateOfBirth: new Date("november 23,1980"), gender: "Male", salary: 55000 },
-        { name: "Ukamala", dateOfBirth: new Date("november 29,1900"), gender: "Male", salary: 65000 },
-        { name: "Tushar", dateOfBirth: new Date("december 09,1998"), gender: "Male", salary: 15689 },
-        { name: "Lubaba", dateOfBirth: new Date("december 19,2005"), gender: "Female", salary: 465456 },
-    ];
-    $scope.studentList = students; 
-    //$scope.rowlimit = 2;
-    $scope.sortColumn = 'name';
-
+    // Function to load products from the API
+    $scope.loadProducts = function () {
+        $http.get('/api/products')
+            .then(function (response) {
+                $scope.products = response.data;
+            });
+    };
 });

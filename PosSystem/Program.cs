@@ -1,6 +1,8 @@
 using Microsoft.Extensions.Configuration;
 using PosSystem.Database;
 using Microsoft.EntityFrameworkCore;
+using PosSystem.Repository.Abstraction;
+using PosSystem.Repository;
 
 namespace PosSystem
 {
@@ -14,7 +16,8 @@ namespace PosSystem
             builder.Services.AddControllersWithViews();
             //dependency resolve kore ekhane...
             builder.Services.AddDbContext<PosSystemDbContext>(opt => opt.UseSqlServer("Server=DESKTOP-D63RLDO;Database=PosSystemDB;User Id=sa;Password=Abjt@8632;MultipleActiveResultSets=True"));
-
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IBrandRepository, BrandRepository>();
             var app = builder.Build();
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
