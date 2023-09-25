@@ -277,6 +277,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\scriptNg\\Controller\\BrandCtrl.js",
+      "PackagePath": "staticwebassets\\scriptNg\\Controller\\BrandCtrl.js"
+    },
+    {
       "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\scriptNg\\Controller\\productCtrl.js",
       "PackagePath": "staticwebassets\\scriptNg\\Controller\\productCtrl.js"
     },

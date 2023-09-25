@@ -63,12 +63,21 @@ namespace PosSystem.Controllers
             if (isSuccess)
             {
                 return Ok(new { StatusCode = 200, Message = "Product created successfully." });
+               
             }
             else
             {
                 return Ok(new { StatusCode = 500, Message = "Failed to create the product." });
+                
             }
+            
         }
+        public IActionResult ProductList()
+        {
+            ICollection<Product> Products = _productRepository.GetAll();
+            return Ok(Products);
+        }
+
 
 
         [HttpGet("{ProductId}")]
@@ -115,6 +124,7 @@ namespace PosSystem.Controllers
                 return StatusCode(500, new { Message = "Failed to update the product." });
             }
         }
+
 
     }
 }

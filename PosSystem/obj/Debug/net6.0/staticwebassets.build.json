@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5oMn+bLIfvLfPpRkbalNlgOotwUnlP89/rLM1WMAaAc=",
+  "Hash": "9YM5SxnT9hUy5OQNWc0kJE/abvNo0Z2zsX7guBjzUcA=",
   "Source": "PosSystem",
   "BasePath": "_content/PosSystem",
   "Mode": "Default",
@@ -1222,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\scriptNg\\app.js"
+    },
+    {
+      "Identity": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\scriptNg\\Controller\\BrandCtrl.js",
+      "SourceId": "PosSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\",
+      "BasePath": "_content/PosSystem",
+      "RelativePath": "scriptNg/Controller/BrandCtrl.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scriptNg\\Controller\\BrandCtrl.js"
     },
     {
       "Identity": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\scriptNg\\Controller\\productCtrl.js",

@@ -5,8 +5,7 @@
     $scope.newProduct = { ProductId: 0, Name: '', Description: '', Price:'',BrandId: 0 }
 
     $scope.save = function() {
-        var data = $scope.newProduct;
-        //console.log(data);
+        var data = $scope.Product;
         $scope.createProduct(data);
     }
 
@@ -27,17 +26,24 @@
 
     // Function to create a new product
     $scope.createProduct = function (product) {
-        
         $http.post('/product/CreatePost', product)
             .then(function (response) {
-                console.log(response.data);
                 $scope.loadProducts();
             });
     };
+    $scope.loadBrands = function () {
+        // Make an HTTP GET request to fetch brands from the server
+        $http.get('/brand/GetAllBrands') // Replace with the actual API endpoint for fetching brands
+            .then(function (response) {
+                // Update the brands list when the data is received
+                $scope.brands = response.data;
+            });
+    };
+    $scope.loadBrands();
 
     // Function to edit an existing product
     $scope.editProduct = function (product) {
-        $http.put('/api/products/' + product.Id, product)
+        $http.put('/product/' + product.Id, product)
             .then(function (response) {
                 // Refresh the products list after updating
                 $scope.loadProducts();
@@ -46,9 +52,11 @@
 
     // Function to load products from the API
     $scope.loadProducts = function () {
-        $http.get('/api/products')
+        $http.get('/Product/ProductList')
             .then(function (response) {
+                console.log(response.data);
                 $scope.products = response.data;
             });
     };
+    $scope.loadProducts();
 });
