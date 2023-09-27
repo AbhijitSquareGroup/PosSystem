@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9YM5SxnT9hUy5OQNWc0kJE/abvNo0Z2zsX7guBjzUcA=",
+  "Hash": "YkCKDxJzsU4MxaghF1tFI9a7JJ6zQNcHJfLntVsShEs=",
   "Source": "PosSystem",
   "BasePath": "_content/PosSystem",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Product.css"
+    },
+    {
+      "Identity": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\css\\sales-style.css",
+      "SourceId": "PosSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\",
+      "BasePath": "_content/PosSystem",
+      "RelativePath": "css/sales-style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\sales-style.css"
     },
     {
       "Identity": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\css\\site.css",
@@ -1256,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\scriptNg\\Controller\\productCtrl.js"
+    },
+    {
+      "Identity": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\scriptNg\\Controller\\SalesCtrl.js",
+      "SourceId": "PosSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\",
+      "BasePath": "_content/PosSystem",
+      "RelativePath": "scriptNg/Controller/SalesCtrl.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scriptNg\\Controller\\SalesCtrl.js"
     }
   ]
 }

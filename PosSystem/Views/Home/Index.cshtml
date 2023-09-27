@@ -1,192 +1,74 @@
-﻿@* @{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
-@* 
-<div ng-app="posSystemApp">
-    <div ng-controller="productCtrl">
-        <div class="text-center">
-            <h1 class="display-4">Welcome {{firstName + " " + lastName}}</h1>
-            <span ng-bind="firstName"></span>
-            <span ng-bind="lastName"></span>
-        </div>
-        <div ng-controller="myController">
-            {{message}}
-            </br>
-            <table>
-                <tr><td>First Name</td>
-                    <td>
-                        <input type="text" ng-model="employee.firstName" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>Last Name</td>
-                    <td>
-                        <input type="text" ng-model="employee.lastName" />
-                    </td>
-                </tr>
-                <tr><td>Gender</td>
-                    <td>
-                        <input type="text" ng-model="employee.gender" />
-                    </td>
-                </tr>
-            </table>
-            <div>
-                First Name :{{employee.firstName}}
-            </div>
-            <div>
-                Last Name :{{employee.lastName}}
-            </div>
-            <div>
-                Gender :{{employee.gender}}
-            </div>
-            <input type="text" ng-model="mssg" />
-            </br></br>
-            {{mssg}}
-        </div>
-        
-    </div>
-    <div ng-controller="Table">
-        <table>
-            <thead>
-                <tr>
-                    <th>FirstName</th>
-                    <th>LastName</th>
-                    <th>Gender</th>
-                    <th>Salary</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="employee in employeeList">
-                    <td>{{employee.firstName}}</td>
-                    <td>{{employee.LastName}}</td>
-                    <td>{{employee.gender}}</td>
-                    <td>{{employee.salary}}</td>
-
-                </tr>
-            </tbody>
-        </table>
-    </div></br></br>
-
-    <div ng-controller="Table">
-        <ul>
-            <li ng-repeat="country in countryList" ng-init="parentIndex=$index">
-                {{country.name}} - Index = {{$index}}
-                <ul>
-                    <li ng-repeat="city in country.cities">
-                        {{city.name}} - Parent Index={{parentIndex}}, Index = {{$index}}
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div ng-controller="Table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Likes</th>
-                    <th>Dislikes</th>
-                    <th>Likes/Dislikes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="technology in technologyList">
-                    <td>{{technology.name}}</td>
-                    <td>{{technology.like}}</td>
-                    <td>{{technology.dislike}}</td>
-                    <td>
-                        <input type="button" value="Like" ng-click="incrementLikes(technology)" />
-                        <input type="button" value="Dislike" ng-click="incrementDislikes(technology)" />
-                        <input type="button" value="Unlike" ng-click="decrementLikes(technology)" />
-                        <input type="button" value="Undislike" ng-click="decrementDislikes(technology)" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div ng-controller="Table">
-        Rows to Display :<input type="number" step="1" min="0" max="5" ng-model="rowlimit" />
-        Order By : <select ng-model="sortColumn">
-            <option value="name">Name ASC</option>
-            <option value="name">Gender ASC</option>
-            <option value="name">Date Of Birth ASC</option>
-            <option value="name">Salary DESC</option>
-
-        </select>
-        Search:<input type="text" placeholder="Search student" ng-model="searchText" />
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Date of Birth</th>
-                    <th>Gender</th>
-                    <th>Salary</th>
-                    @*<th>Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="student in studentList |limitTo:rowlimit |orderBy:sortColumn |filter:searchText">
-                    <td>{{student.name| uppercase}}</td>
-                    <td>{{student.dateOfBirth|date:"dd/MM/yyyy"}}</td>
-                    <td>{{student.gender| lowercase }}</td>
-                    <td>{{student.salary|currency:"$"}}</td>
-                     <td>{{studentList.Gender}}</td> 
-                     <td>
-                        <input type="button" value="Like" ng-click="incrementLikes(technology)" />
-                        <input type="button" value="Dislike" ng-click="incrementDislikes(technology)" />
-                        <input type="button" value="Unlike" ng-click="decrementLikes(technology)" />
-                        <input type="button" value="Undislike" ng-click="decrementDislikes(technology)" />
-                    </td> *
-
-                </tr>
-            </tbody>
-        </table>
-
-    </div>
-
-</div> *@
 <!DOCTYPE html>
-<html ng-app="productApp">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Product CRUD</title>
-    <a href="~/lib/angular.js/angular.min.js.map">~/lib/angular.js/angular.min.js.map</a>
-    <script src="~/lib/angular.js/angular.min.js"></script>
-    <script src="~/lib/angular.js/angular.js"></script>
-    <link href="~/css/product.css" rel="stylesheet" />
-    <!-- Include AngularJS -->
+    <title>Sales Page</title>
+    <link href="~/css/sales-style.css" rel="stylesheet">
+    <script src="~/scriptng/controller/salesctrl.js"></script>
+    <!-- Include AngularJS library -->
     
-    <!-- Include your AngularJS app.js and controller.js -->
-
+    <!-- Include your AngularJS controller script -->
+   
 </head>
-<body ng-controller="ProductController">
-    <h1>Product CRUD</h1>
+<body ng-app="salesApp" ng-controller="SalesController">
+    <div class="container">
+        <h1>Sales Page</h1>
 
-    <!-- List Products -->
-    <h2>Products List</h2>
-    <ul>
-        <li ng-repeat="product in products">
-            {{ product.Name }} - {{ product.Description }} - ${{ product.Price }}
-            <button ng-click="editProduct(product)">Edit</button>
-            <button ng-click="deleteProduct(product.ProductId)">Delete</button>
-        </li>
-    </ul>
+        <!-- Dropdown for selecting a customer -->
+        <div>
+            <label for="customerSelect">Select Customer:</label>
+            <select id="customerSelect" ng-model="selectedCustomerId" ng-change="getCustomerDetails()">
+                <option value="">Select a Customer</option>
+                @foreach (var customer in Model.Customer)
+                {
+                    <option value="@customer.CustomerId">@customer.CustomerName</option>
+                }
+            </select>
+        </div>
 
-    <!-- Add/Edit Product Form -->
-    <h2>Add/Edit Product</h2>
-    <form ng-submit="saveProduct()">
-        <label for="name">Name:</label>
-        <input type="text" id="name" ng-model="currentProduct.Name" required><br>
+        <!-- Display customer details -->
+        <div ng-if="customerDetails">
+            <h2>Customer Details:</h2>
+            <p>Customer Name: <span>{{ customerDetails.CustomerName }}</span></p>
+            <p>Customer Address: <span>{{ customerDetails.CustomerAddress }}</span></p>
+            <!-- Add more customer details as needed -->
+        </div>
 
-        <label for="description">Description:</label>
-        <input type="text" id="description" ng-model="currentProduct.Description"><br>
+        <!-- Table for adding products -->
+        <div>
+            <h2>Add Products:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="product in addedProducts">
+                        <td>{{ product.ProductName }}</td>
+                        <td>{{ product.ProductPrice }}</td>
+                        <td>{{ product.Quantity }}</td>
+                        <td>{{ product.Total }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button ng-click="addProduct()">Add Product</button>
+        </div>
 
-        <label for="price">Price:</label>
-        <input type="number" id="price" ng-model="currentProduct.Price" required><br>
-
-        <button type="submit">Save</button>
-    </form>
+        <!-- Calculate total sale, discount, and grand total -->
+        <div>
+            <h2>Summary:</h2>
+            <p>Total Sale: $<span>{{ calculateTotalSale() }}</span></p>
+            <label for="discount">Discount:</label>
+            <input type="number" id="discount" ng-model="discountAmount" ng-change="calculateGrandTotal()">
+            <p>Grand Total: $<span>{{ grandTotal }}</span></p>
+        </div>
+    </div>
 </body>
 </html>
 
-<link href="~/css/table.css" rel="stylesheet" />

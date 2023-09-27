@@ -44,7 +44,30 @@ namespace PosSystem.Controllers
             return Ok(products);
         }
 
-        
+
+
+        [HttpGet]
+        public IActionResult ProductList()
+        {
+            ICollection<Product> Products = _productRepository.GetAll();
+            return Ok(Products);
+        }
+
+
+        [HttpGet("product/GetById/{productId}")]
+        public IActionResult GetById(int productId)
+        {
+            var product = _productRepository.GetById(productId);
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(product);
+        }
+
+
         [HttpPost]
         public IActionResult CreatePost([FromBody] Product product)
         {
@@ -63,44 +86,24 @@ namespace PosSystem.Controllers
             if (isSuccess)
             {
                 return Ok(new { StatusCode = 200, Message = "Product created successfully." });
-               
+
             }
             else
             {
                 return Ok(new { StatusCode = 500, Message = "Failed to create the product." });
-                
-            }
-            
-        }
-        public IActionResult ProductList()
-        {
-            ICollection<Product> Products = _productRepository.GetAll();
-            return Ok(Products);
-        }
 
-
-
-        [HttpGet("{ProductId}")]
-        public IActionResult GetById(int ProductId)
-        {
-            var product = _productRepository.GetById(ProductId);
-
-            if (product == null)
-            {
-                return NotFound();
             }
 
-            return Ok(product);
         }
-        [HttpPut("{ProductId}")]
-        public IActionResult Edit(int ProductId, [FromBody] Product product)
+
+        public IActionResult ProductEdit([FromBody] Product product)
         {
             if (product == null)
             {
                 return BadRequest("Invalid product data.");
             }
 
-            var existingProduct = _productRepository.GetById(ProductId);
+            var existingProduct = _productRepository.GetById(product.ProductId);
 
             if (existingProduct == null)
             {
@@ -124,6 +127,30 @@ namespace PosSystem.Controllers
                 return StatusCode(500, new { Message = "Failed to update the product." });
             }
         }
+
+        [HttpDelete("product/ProductDelete/{ProductId}")]
+        //[HttpDelete]
+        public IActionResult ProductDelete(int ProductId)
+        {
+            var existingProduct = _productRepository.GetById(ProductId);
+
+            if (existingProduct == null)
+            {
+                return NotFound();
+            }
+
+            bool isSuccess = _productRepository.Remove(existingProduct);
+
+            if (isSuccess)
+            {
+                return Ok(new { Message = "Product deleted successfully." });
+            }
+            else
+            {
+                return StatusCode(500, new { Message = "Failed to delete the product." });
+            }
+        }
+
 
 
     }

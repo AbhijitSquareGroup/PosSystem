@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\Table.css"
     },
     {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\css\\sales-style.css",
+      "PackagePath": "staticwebassets\\css\\sales-style.css"
+    },
+    {
       "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -279,6 +283,10 @@
     {
       "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\scriptNg\\Controller\\BrandCtrl.js",
       "PackagePath": "staticwebassets\\scriptNg\\Controller\\BrandCtrl.js"
+    },
+    {
+      "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\scriptNg\\Controller\\SalesCtrl.js",
+      "PackagePath": "staticwebassets\\scriptNg\\Controller\\SalesCtrl.js"
     },
     {
       "Id": "F:\\ASP.net Project\\PosSystem\\PosSystem\\wwwroot\\scriptNg\\Controller\\productCtrl.js",

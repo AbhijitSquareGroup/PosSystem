@@ -88,39 +88,44 @@
                     <option value="">Select a Brand</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-success">{{ editMode ? 'Update' : 'Create' }}</button>
+            <button type="submit" class="btn btn-success">{{ Product.ProductId>0 ? 'Update' : 'Create' }}</button>
             <button class="btn btn-secondary" ng-click="cancelEdit()">Cancel</button>
         </form>
     </div>
 
+    <!-- Product List -->
     <!-- Product List -->
     <div class="table-container">
         <h2>Product List</h2>
         <table class="table table-bordered">
             <thead>
                 <tr>
+                    <th>Sl.No</th> <!-- Add a new column for Sl.No -->
                     <th>Product ID</th>
                     <th>Name</th>
                     <th>Description</th>
                     <th>Price</th>
                     <th>Brand</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="product in products">
+                    <td>{{$index + 1}}</td> <!-- Use $index to display the Sl.No -->
                     <td>{{ product.productId }}</td>
                     <td>{{ product.name }}</td>
                     <td>{{ product.description }}</td>
                     <td>{{ product.price }}</td>
                     <td>{{ product.brandId }}</td>
                     <td>
-                        <button class="btn btn-primary" ng-click="editProduct(product)">Edit</button>
-                        <button class="btn btn-danger" ng-click="deleteProduct(product.ProductId)">Delete</button>
+                        <button class="btn btn-primary" ng-click="edit(product)">Edit</button>
+                        <button class="btn btn-danger" ng-click="deleteProduct(product.productId)">Delete</button>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+
 </div>
 
 
